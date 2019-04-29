@@ -1,6 +1,6 @@
 FROM mdillon/postgis:11-alpine
 
-LABEL maintainer="Samuel Kurath"
+LABEL maintainer="Geometalab"
 
 COPY angproj /docker-entrypoint-initdb.d/angproj
 COPY init-angproj-db.sh /docker-entrypoint-initdb.d/z_init-angproj-db.sh
